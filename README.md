@@ -11,4 +11,5 @@
 - Frontend: HTML + CSS + JS
 - Backend: FastAPI
 - ML: Scikit-learn
-- Деплой: Render + Netlify
+- Деплой: Render(бэкенд) + Netlify(фронтенд)
+  
