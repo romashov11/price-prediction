@@ -63,3 +63,18 @@ button:hover{
     
 }
 
+input{
+    padding: 0.2rem;
+
+}
+
+
+.hid{
+    display: none;
+    
+}
+
+.unhid{
+    display: block;
+    color: red;
+}

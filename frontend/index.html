@@ -18,7 +18,7 @@
         <br>
 
         <label for="metres">Площадь квартиры</label>
-        <input type="number" id="metres" min="0">
+        <input type="number" id="metres">
         <br>
 
         <label for="rooms">Количество комнат</label>
@@ -27,18 +27,19 @@
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
-            <option value="5">5</option>
         </select>
         <br>
 
         <label for="floors">Этаж</label>
-        <input type="number" id="floors" min="1">
+        
+        <input type="number" id="floors" max="80">
+        <span>обязательное поле</span>
         <br>
 
         <label for="metres_underground">Ближайшее метро(минуты)</label>
-        <input type="number" id="metres_underground" min="1">
+        <input type="number" id="metres_underground">
         <br>
-        
+        <span id="er">Неверные данные</span>
         <button id="count_result">Рассчитать</button>
 
 
