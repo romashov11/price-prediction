@@ -1,10 +1,6 @@
 function get_params(){
     const btn = document.getElementById("count_result")
-/*    document.addEventListener('keydown', function(event) {
-        // Ваш код здесь
-        console.log('Нажата клавиша:', event.key);
-        });
-*/
+
     const err = document.getElementById('er')
     err.classList.add("hid")
 
@@ -15,13 +11,16 @@ function get_params(){
         const rooms = document.getElementById('rooms').value
         const floors = document.getElementById('floors').value
         const metro = document.getElementById('metres_underground').value
+        const year = document.getElementById('build_year').value
         
 
-        if (metres <= 0 || floors <= 0 || metro <= 0) {
+        if (metres <= 0 || floors <= 0 || metro <= 0 || year <= 0) {
+            
             err.classList.add("unhid")
-            document.getElementById('metres').value = 0
-            document.getElementById('floors').value = 0
-            document.getElementById('metres_underground').value = 0
+            document.getElementById('metres').value = ""
+            document.getElementById('floors').value = ""
+            document.getElementById('metres_underground').value = ""
+            document.getElementById('build_year').value = ""
             
             
 
