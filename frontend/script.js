@@ -1,3 +1,5 @@
+import { sendData } from "./api.js";
+
 function get_params(){
     const btn = document.getElementById("count_result")
 
@@ -34,7 +36,10 @@ function get_params(){
             rooms: parseInt(rooms) || 0,           // Преобразуем в целое число
             floors: parseInt(floors) || 1,         // Преобразуем в целое число
             metro: parseFloat(metro) || 0
+            
         }
+
+        // sendData(url, data) - отправка данных на сервер
         }
 
         
@@ -42,4 +47,8 @@ function get_params(){
     
 }
 
+
+
+
 get_params();
+
