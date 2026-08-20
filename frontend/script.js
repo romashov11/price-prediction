@@ -1,4 +1,5 @@
 import { sendData } from "./api.js";
+import { loadSkeletons } from "./loadSkeletons.js";
 
 function get_params(){
     const btn = document.getElementById("count_result")
@@ -52,3 +53,4 @@ function get_params(){
 
 get_params();
 
+loadSkeletons();
