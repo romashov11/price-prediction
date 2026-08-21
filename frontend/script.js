@@ -1,5 +1,6 @@
 import { sendData } from "./api.js";
 import { loadSkeletons } from "./loadSkeletons.js";
+import { currentTheme } from "./currentTheme.js";
 
 function get_params(){
     const btn = document.getElementById("count_result")
@@ -54,3 +55,6 @@ function get_params(){
 get_params();
 
 loadSkeletons();
+
+currentTheme();
+
